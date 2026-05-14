@@ -7,7 +7,7 @@ export default function TotalPrice() {
   const addPrice = () => {
     setPrices(prev => [...prev, 100]);
   };
-
+}
 //change price
   const increasePrice = (id: number) => {
     setPrices(prev =>

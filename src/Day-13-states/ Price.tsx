@@ -20,7 +20,7 @@ export default function TotalPrice() {
   let totalPrice = 0;
     for (const price of prices) {
         totalPrice += price;
- }
+    }
 
 return (
   <div>
@@ -29,7 +29,7 @@ return (
       {prices.map((price, index) => (
         <li key={index}>
           ${price}
-          <button onClick={() => increasePrice(i)}>+50</button>
+          <button onClick={() => increasePrice(index)}>+50</button>
         </li>
       ))}
     </ul>
